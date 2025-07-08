@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -22,6 +23,26 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+header nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+header nav a:hover {
+    color: var(--accent1-color);
 }
 
 header, main, footer {
