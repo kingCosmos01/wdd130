@@ -21,11 +21,11 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 header img {
@@ -89,14 +89,50 @@ article{
     position: absolute;
     top: 120px;
     display: flex;
+    justify-content: row-reverse;
+    justify-content: flex-start ;
     height: 125px;
     background: var(--accent2-color);
     color: #fff;
+    
 }
 
 .hero article img {
     float: right;
     width: 150px;
     height: auto;
+    
     border: 1px solid var(--primary-color);
+}
+
+main .hero section {
+    display: flex;
+    flex-direction: row;
+}
+
+main .hero section h2 {
+    position: absolute;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+}
+
+main .hero section figure {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 60px;
+    text-align: center;
+    
+}
+
+main .hero section figure figcaption {
+    color: var(--accent1-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-top: 1px solid var(--primary-color);
 }
