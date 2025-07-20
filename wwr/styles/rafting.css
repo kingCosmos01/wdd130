@@ -105,6 +105,10 @@ article{
     border: 1px solid var(--primary-color);
 }
 
+main {
+    overflow: hidden;
+}
+
 main .hero section {
     display: flex;
     flex-direction: row;
@@ -128,6 +132,65 @@ main .hero section figure {
 
 main .hero section figure figcaption {
     color: var(--accent1-color);
+}
+
+main img {
+    width: 100%;
+    height: 50%;
+    margin: 10px 0;
+}
+
+main .contact-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main .contact-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+main .contact-box form .input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+main .contact-box form .input-group.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+main .contact-box form .input-group.row > label {
+    margin-left: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+iframe {
+    border: 0;
+    width: 100%;
 }
 
 footer {
